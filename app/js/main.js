@@ -1,3 +1,14 @@
-var URLquery = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=" + APIkey;
-var APIkey = "PY5gwUCCku73CrQszHPGLA84ZnIiuzyg";
+function callNYT() {
+    var URLquery = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=PY5gwUCCku73CrQszHPGLA84ZnIiuzyg";
+    // var APIkey = "PY5gwUCCku73CrQszHPGLA84ZnIiuzyg";
+
+    $.ajax({
+        url: URLquery,
+        method: "GET"
+    }).then(function(res){
+        console.log(res);
+    })
+}
+
+callNYT();
 
