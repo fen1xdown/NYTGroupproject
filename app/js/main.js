@@ -7,6 +7,8 @@ function callNYT() {
         method: "GET"
     }).then(function(res){
         console.log(res);
+        console.log(res.response.docs["0"].headline);
+        $("#headline").text(res.response.docs["0"].snippet);
     })
 }
 
