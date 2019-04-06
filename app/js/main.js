@@ -1,6 +1,7 @@
 function callNYT() {
-    var URLquery = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=PY5gwUCCku73CrQszHPGLA84ZnIiuzyg";
-    // var APIkey = "PY5gwUCCku73CrQszHPGLA84ZnIiuzyg";
+    var APIkey = "PY5gwUCCku73CrQszHPGLA84ZnIiuzyg";
+    var URLquery = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=" + APIkey;
+
 
     $.ajax({
         url: URLquery,
